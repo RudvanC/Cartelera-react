@@ -83,7 +83,7 @@ function CardLg({ movieId }) {
     <div className="max-w-[1200px] mx-auto px-4 bg-[var(--background-color)]">
       <div className="flex flex-col p-4 w-full justify-center space-y-4 text-[#d7e7ee]">
         {/* Movie details container */}
-        <article className="flex flex-col md:flex-row gap-6 items-start bg-[#0f0f24] p-6 rounded-lg shadow-lg">
+        <article className="flex flex-col md:flex-row gap-6 items-start border-2 border-white-400 p-6 rounded-lg shadow-lg">
           {/* Movie poster section */}
           <div className="md:w-1/3 w-full flex justify-center">
             <img
