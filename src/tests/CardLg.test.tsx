@@ -61,7 +61,7 @@ test('muestra el botón "Ver Tráiler" y abre el modal al hacer clic', async () 
 
   // Buscamos el botón de tráiler
   const trailerButton = await screen.findByRole("button", {
-    name: /Ver Tiler/i,
+    name: /Ver Tráiler/i,
   });
   expect(trailerButton).toBeInTheDocument();
 
