@@ -9,7 +9,7 @@
     "vercel-build": "npm run test && npm run build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "vitest",
+    "test": "vitest --run --coverage",
     "test:ui": "vitest --ui",
     "mock-api": "json-server --watch db.json --port 3001",
     "coverage": "vitest run --coverage"
