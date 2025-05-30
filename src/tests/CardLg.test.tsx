@@ -6,7 +6,7 @@ import {
   mockMovieData,
   mockVideoData,
   mockCreditsData,
-} from "../__mocks__/mockData";
+} from "./__mocks__/mockData";
 
 // Mock del store de Zustand
 vi.mock("@store/useMyListStore", () => ({
@@ -61,7 +61,7 @@ test('muestra el botón "Ver Tráiler" y abre el modal al hacer clic', async () 
 
   // Buscamos el botón de tráiler
   const trailerButton = await screen.findByRole("button", {
-    name: /Ver Tráiler/i,
+    name: /Ver Tiler/i,
   });
   expect(trailerButton).toBeInTheDocument();
 
