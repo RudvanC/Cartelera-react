@@ -13,7 +13,8 @@ export default defineConfig({
       "@assets": path.resolve(__dirname, "./src/assets"),
       "@context": path.resolve(__dirname, "./src/context"),
       "@store": path.resolve(__dirname, "./src/store"),
-      "@hooks": path.resolve(__dirname, "./src/hooks")
+      "@hooks": path.resolve(__dirname, "./src/hooks"),
+      "@mocks": path.resolve(__dirname, "./src/__mocks__"),
     },
   },
   build: {
@@ -24,5 +25,10 @@ export default defineConfig({
   server: {
     port: 5173,
     open: true,
+  },
+  test: {
+    globals: true,
+    environment: "jsdom",
+    setupFiles: "./src/setupTest.js",
   },
 });
