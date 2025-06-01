@@ -15,6 +15,7 @@ import { AuthProvider } from "@pages/auth/userpage/AuthContext.js";
 import Favorites from "@pages/auth/FavoritesRud.js";
 import Favoritos from "@pages/auth//favorites.js";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
   const { user: auth0User, isAuthenticated, isLoading } = useAuth0();
@@ -89,6 +90,7 @@ export default function App() {
             <Route path="/favoritos" element={<Favoritos />} />
           </Routes>
           <SpeedInsights />
+          <Analytics />
         </div>
         <Footer />
       </div>
