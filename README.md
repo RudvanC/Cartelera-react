@@ -77,7 +77,7 @@ This will start a mock API server, usually on `http://localhost:3001`, serving d
 
 ### Running Tests
 
-To run the test suite:
+To run the test suite:.
 
 ```bash
 npm run test
